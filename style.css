@@ -1,5 +1,5 @@
 body{
-    font-family: san-serif;
+    font-family: sans-serif;
     background-color:black;
     color: white;
     /* text-align: justify; */
@@ -31,9 +31,23 @@ p{
 li{
   font-size: 20px;
 }
-footer p{
+/* footer p{
+  font-size: 16px;
+} */
+/* article header p{
+  font-style: italic;
+} */
+#author{
+  font-style: italic;
+  font-size: 18px;
+}
+.Copyright{
   font-size: 16px;
 }
-article header p{
-  font-style: italic;
+.battle-chronicles{
+  font-size: 18px;
+  font-weight: bold;
+}
+.battle-chronicles-list{
+  list-style: none;
 }
