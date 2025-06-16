@@ -37,3 +37,6 @@ footer p{
 article header p{
   font-style: italic;
 }
+.list-deco{
+  list-style: none;
+}
