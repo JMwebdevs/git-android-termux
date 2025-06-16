@@ -1,34 +1,36 @@
-body{
-    font-family: sans-serif;
-    background-color:black;
-    color: white;
-    /* text-align: justify; */
+body {
+  font-family: sans-serif;
+  background-color: rgb(16, 16, 16);
+  color: #b7b7b7;
+  /* text-align: justify; */
 }
-h1{
+h1,
+h2,
+h3,
+h4 {
   color: #cfc922;
+}
+h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
 }
-h2{
+h2 {
   font-size: 40px;
-  color: #cfc922;
 }
-h3{
+h3 {
   font-size: 30px;
-  color: #cfc922;
 }
-h4{
+h4 {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #cfc922;
 }
-p{
+p {
   font-size: 22px;
   line-height: 1.5;
 }
-li{
+li {
   font-size: 20px;
 }
 /* footer p{
@@ -37,17 +39,25 @@ li{
 /* article header p{
   font-style: italic;
 } */
-#author{
+#author {
   font-style: italic;
   font-size: 18px;
 }
-.Copyright{
+.Copyright {
   font-size: 16px;
 }
-.battle-chronicles{
+.battle-chronicles {
   font-size: 18px;
   font-weight: bold;
 }
-.battle-chronicles-list{
+.battle-chronicles-list {
   list-style: none;
+}
+.main-header{
+  background-color: rgb(25, 25, 25);
+}
+aside{
+  background-color: rgb(25, 25, 25);
+  border-top: 5px solid #cfc922;
+  border-bottom: 5px solid #cfc922;
 }
