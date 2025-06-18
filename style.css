@@ -70,6 +70,9 @@ article li:first-child {
 article li:last-child {
   font-style: italic;
 }
+/* aside li:first-child{
+  font-weight: bold;
+} */
 /* li:nth-child(2){
   color: #cfc922;
 }
@@ -79,6 +82,29 @@ li:nth-child(even){
 article header p:first-child {
   font-style: italic;
 }
-article p:last-child {
-  color: #cfc922;
+/* Misconception this won't work */
+article p:first-child {
+  color: rgb(207, 201, 34);
+}
+
+/* Styling Links */
+/* 4 states define in this exact order (links, visited, hover, active)  */
+/* LVHA */
+a:link{
+  color: rgb(207, 201, 34);
+  text-decoration: none;
+}
+a:visited{
+  color: rgb(207, 201, 34);
+}
+a:hover{
+  color:  darkgoldenrod;
+  font-weight: bold;
+  text-decoration: dotted darkgoldenrod;
+  font-size: 19px;
+  transition: 0.3s;
+}
+a:active{
+  font-style: italic;
+  font-size: 16px;
 }
