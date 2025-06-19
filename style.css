@@ -70,9 +70,9 @@ article li:first-child {
 article li:last-child {
   font-style: italic;
 }
-/* aside li:first-child{
-  font-weight: bold;
-} */
+aside li:last-child {
+  font-style: italic;
+}
 /* li:nth-child(2){
   color: #cfc922;
 }
@@ -90,22 +90,40 @@ article p:first-child {
 /* Styling Links */
 /* 4 states define in this exact order (links, visited, hover, active)  */
 /* LVHA */
-a:link{
+a:link {
   color: rgb(207, 201, 34);
   text-decoration: none;
 }
-a:visited{
+/* a{
+  color: red;
+} */
+a:visited {
   color: rgb(207, 201, 34);
 }
-a:hover{
-  color:  darkgoldenrod;
+a:hover {
+  color: darkgoldenrod;
   font-weight: bold;
   text-decoration: dotted darkgoldenrod;
   font-size: 19px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
-a:active{
+a:active {
   font-style: italic;
   font-size: 16px;
 }
 /* google chrome devtools (inspect elements)*/
+
+/* Resolving Conflict */
+/* hover the selector to see all priority */
+/* #copyright {
+  color: rgb(207, 201, 34);
+}
+.Copyright {
+  color: red;
+}
+.copyRight {
+  color: blue;
+}
+footer p {
+  color: green !important; 
+} */
