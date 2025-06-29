@@ -1,14 +1,21 @@
+/* universal selector - Select every single elements parang default
+at hindi sya na iinherit ng ibang elements  inaaply niya sa lahat ng elements
+one of the lowest priority */
+*{
+  /* border: 1px solid white; */
+}
 body {
   font-family: sans-serif;
   background-color: rgb(16, 16, 16);
   color: #b7b7b7;
-  /* text-align: justify; */
+  border-top: 10px solid rgb(207, 201, 34) ;
 }
 h1,
 h2,
 h3,
 h4 {
-  color: #cfc922;
+  color: #cfc922; /*override inherit styles*/
+  /* border: 1px solid rgb(207, 201, 34); */
 }
 h1 {
   font-size: 26px;
@@ -127,3 +134,13 @@ a:active {
 footer p {
   color: green !important; 
 } */
+
+/** We dont need all of this  */
+/* nav a:link,
+nav p{
+  font-size: 18px;
+} */
+/*? better way  */
+nav{
+  font-size: 18px;
+}
