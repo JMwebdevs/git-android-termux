@@ -1,14 +1,40 @@
 /* universal selector - Select every single elements parang default
 at hindi sya na iinherit ng ibang elements  inaaply niya sa lahat ng elements
 one of the lowest priority */
-*{
+
+/* Universal Selector  */
+* {
   /* border: 1px solid white; */
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: sans-serif;
   background-color: rgb(16, 16, 16);
   color: #b7b7b7;
-  border-top: 10px solid rgb(207, 201, 34) ;
+  border-top: 10px solid rgb(207, 201, 34);
+}
+.main-header {
+  background-color: #7d7d7d4b;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+/*? better way  */
+nav {
+  font-size: 18px;
+}
+article {
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: rgb(25, 25, 25, 0.769);
+  border-top: 5px solid #cfc922;
+  border-bottom: 5px solid #cfc922;
+  padding: 50px 0px;
 }
 h1,
 h2,
@@ -24,9 +50,12 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 h4 {
   font-size: 20px;
@@ -36,9 +65,19 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin: 0px;
 }
 /* footer p{
   font-size: 16px;
@@ -60,14 +99,7 @@ li {
 .battle-chronicles-list {
   list-style: none;
 }
-.main-header {
-  background-color: rgba(25, 25, 25, 0.769);
-}
-aside {
-  background-color: rgb(25, 25, 25, 0.769);
-  border-top: 5px solid #cfc922;
-  border-bottom: 5px solid #cfc922;
-}
+
 /* .first-li{
   font-weight: bold;
 } */
@@ -140,7 +172,3 @@ footer p {
 nav p{
   font-size: 18px;
 } */
-/*? better way  */
-nav{
-  font-size: 18px;
-}
