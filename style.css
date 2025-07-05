@@ -14,6 +14,10 @@ body {
   color: #b7b7b7;
   border-top: 10px solid rgb(207, 201, 34);
 }
+.container{
+  width: 800px;
+  margin: 0 auto;
+}
 .main-header {
   background-color: #7d7d7d4b;
   padding: 20px 40px;
