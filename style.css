@@ -8,13 +8,14 @@ one of the lowest priority */
   margin: 0;
   padding: 0;
 }
+/* Page Sections */
 body {
   font-family: sans-serif;
   background-color: rgb(16, 16, 16);
   color: #b7b7b7;
   border-top: 10px solid rgb(207, 201, 34);
 }
-.container{
+.container {
   width: 800px;
   margin: 0 auto;
 }
@@ -22,7 +23,7 @@ body {
   background-color: #7d7d7d4b;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  height: auto;
 }
 /*? better way  */
 nav {
@@ -42,6 +43,7 @@ aside {
   padding: 50px 0px;
   width: 500px;
 }
+/* Small Elements */
 h1,
 h2,
 h3,
@@ -78,9 +80,11 @@ ol {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 li:last-child {
   margin: 0px;
@@ -183,4 +187,16 @@ nav p{
   /* if you change the size of the parent container the image still 100%  very important for responsive design */
   width: 100%; /* percentage of the width of the parent container */
   height: auto; /* adapt height based on content*/
+}
+nav a:link {
+  /* background-color: orangered;  */
+  /* margin: 20px; */
+  /* padding: 20px; */
+  /* display: block;  */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0px;
 }
