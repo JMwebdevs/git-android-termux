@@ -72,10 +72,10 @@ article {
 }
 .content {
   flex: 1;
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   padding: 1rem;
-  /* align-items: center; */
 }
 .manga-volume {
   width: 350px;
@@ -150,4 +150,23 @@ article {
   color: #2162a1;
   font-weight: 500;
   text-decoration: none;
+}
+@media only screen and (max-width: 1000px) {
+  .content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+  }
 }
