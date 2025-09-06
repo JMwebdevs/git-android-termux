@@ -312,3 +312,15 @@ footer {
   margin-bottom: 5px;
   display: block;
 }
+.row{
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+article{
+  flex: 1;
+}
+aside{
+  flex: 0 0 300px;
+}
