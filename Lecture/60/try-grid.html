@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,body{
+      height: 100%;
+    }
+    .container{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-header{
+      background-color: green;
+    }
+    .header-title{
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+    }
+    .grid-container{
+      flex: 1;
+    }
+    footer{
+      padding: 20px;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card{
+      color: white;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <div class="header-title">
+        Header
+      </div>
+    </header>
+    <main class="grid-container">
+      <div class="card grid-items1"></div>
+      <div class="card grid-items2"></div>
+      <div class="card grid-items3"></div>
+      <div class="card grid-items4"></div>
+      <div class="card grid-items5"></div>
+      <div class="card grid-items6"></div>
+      <div class="card grid-items7"></div>
+      <div class="card grid-items8"></div>
+    </main>
+    <footer>
+      <div class="footer">
+        footer
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
