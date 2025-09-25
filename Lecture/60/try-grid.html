@@ -28,6 +28,13 @@
     }
     .grid-container{
       flex: 1;
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      /* align-items: center; */
+      /* column-gap: ; */
+      row-gap: 1rem;
     }
     footer{
       padding: 20px;
@@ -38,8 +45,47 @@
     }
     .card{
       color: white;
-
+      border: none;
+      border-radius: 20px;
+      width: 300px;
+      height: 400px;
     }
+    .grid-items1{
+      background-color: green;
+    }
+    
+    .grid-items2{
+      background-color: rgb(230, 254, 6);
+    }
+    
+    .grid-items3{
+      background-color: rgb(0, 6, 128);
+    }
+    
+    .grid-items4{
+      background-color: rgb(0, 100, 128);
+    }
+    
+    .grid-items5{
+      background-color: rgb(242, 82, 13);
+    }
+    
+    .grid-items6{
+      background-color: rgb(128, 0, 117);
+    }
+    
+    .grid-items7{
+      background-color: rgb(213, 10, 91);
+    }
+    
+    .grid-items8{
+      background-color: rgb(128, 0, 9);
+    }
+    @media only screen and (max-width: 450px) {
+      .grid-container{
+        grid-template-columns: 1fr;
+      }
+}
   </style>
 </head>
 <body>
