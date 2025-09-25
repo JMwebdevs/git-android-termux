@@ -24,7 +24,7 @@ body {
 .main-header {
   background-color: #7d7d7d4b;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   height: auto;
 }
 /*? better way  */
@@ -33,7 +33,7 @@ nav {
   /* text-align: center; */
 }
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .post-header {
   margin-bottom: 40px;
@@ -241,7 +241,8 @@ h2::after {
   top: -10px;
   right: -25px;
 }
-/* Floats
+
+/*! FLOATS LAYOUT
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -277,7 +278,7 @@ footer {
   clear: both;
 } */
 
-/*? Flex */
+/*! FLEX LAYOUT*/
 /* main-header */
 .main-header{
   display: flex;
@@ -312,7 +313,9 @@ footer {
   margin-bottom: 5px;
   display: block;
 }
-.row{
+
+/*! FLEXBOX LAYOUT  */
+/* .row{
   display: flex;
   gap: 70px;
   align-items: flex-start;
@@ -323,4 +326,28 @@ article{
 }
 aside{
   flex: 0 0 300px;
+} */
+
+/*! GRID LAYOUT  */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main-header{
+  /* grid-column: 1/-1; */
+  grid-column: 1/span 2;
+}
+article{
+
+}
+aside{
+  /* align-self: start; */
+}
+footer{
+  background-color: #cfc922;
+  grid-column: 1 / -1;
+  color: black;
 }
