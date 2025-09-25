@@ -12,11 +12,14 @@ body {
   display: block;
   clear: bot;
 }
-.container {
-  /* background-color: green; */
+
+
+/*! Flex Layout  */
+/* .container {
+  background-color: green;
   display: flex;
   gap: 40px;
-}
+} */
 .img {
   flex: 1;
 }
@@ -25,6 +28,19 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+
+  /*! Grid */
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+
+}
+.main-title{
+  grid-column: 1/-1;
+}
+.btn-addtocart{
+  grid-column: 1/-1;
+
 }
 
 .main-title::before {
@@ -71,7 +87,7 @@ body {
 }
 .product-colors{
   display: flex;
-  gap: 10px;
+  gap: 10px; 
 }
 .color {
   background-color: #000;
@@ -152,3 +168,4 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
