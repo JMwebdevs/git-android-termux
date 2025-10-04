@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 9/24/25 -->
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        gap: 1rem;
+        border: none;
+        padding: 2rem;
+        box-shadow: 0px 0px 10px gray;
+        border-radius: 10px;
+        flex-direction: column;
+      }
+      .btn-container{
+        display: flex;
+        gap: 1rem;
+      }
+      .next{
+        flex: 1;
+        border: none;
+        background-color: rgb(42, 128, 124);
+        color: white;
+        padding: 1rem;
+        box-shadow: 5px 5px 10px gray;
+        transition: all ease-in-out 0.15s;
+      }
+      .preview{
+        box-shadow: 0px 5px 10px gray;
+        border: none;
+        flex: 1;
+        color: white;
+        background-color: gray;
+      }
+      .next:hover{
+        opacity: 0.4;
+      }
+      h1{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <button class="darkMode" onclick="document.getElementById('body').style.backgroundColor='black', color='white'">darkMode</button>
+    <div class="container">
+      <h1>KINGDOM</h1>
+      <img src="img/Chapter_201_cover.PNG.webp" width="300px" alt="" id="img" />
+      <div class="btn-container">
+        <button class="next"
+          onclick="document.getElementById('img').src='img/shukai_plains.jpg'"
+        >
+          Next
+        </button>
+
+        <button class="preview"
+          onclick="document.getElementById('img').src='img/Chapter_201_cover.PNG.webp'"
+        >
+          Preview
+        </button>
+      </div>
+
+    </div>
+  </body>
+</html>

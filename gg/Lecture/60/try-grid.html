@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,body{
+      height: 100%;
+    }
+    .container{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-header{
+      background-color: green;
+    }
+    .header-title{
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+    }
+    .grid-container{
+      flex: 1;
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      /* align-items: center; */
+      /* column-gap: ; */
+      row-gap: 1rem;
+    }
+    footer{
+      padding: 20px;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card{
+      color: white;
+      border: none;
+      border-radius: 20px;
+      width: 300px;
+      height: 400px;
+    }
+    .grid-items1{
+      background-color: green;
+    }
+    
+    .grid-items2{
+      background-color: rgb(230, 254, 6);
+    }
+    
+    .grid-items3{
+      background-color: rgb(0, 6, 128);
+    }
+    
+    .grid-items4{
+      background-color: rgb(0, 100, 128);
+    }
+    
+    .grid-items5{
+      background-color: rgb(242, 82, 13);
+    }
+    
+    .grid-items6{
+      background-color: rgb(128, 0, 117);
+    }
+    
+    .grid-items7{
+      background-color: rgb(213, 10, 91);
+    }
+    
+    .grid-items8{
+      background-color: rgb(128, 0, 9);
+    }
+    @media only screen and (max-width: 450px) {
+      .grid-container{
+        grid-template-columns: 1fr;
+      }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <div class="header-title">
+        Header
+      </div>
+    </header>
+    <main class="grid-container">
+      <div class="card grid-items1"></div>
+      <div class="card grid-items2"></div>
+      <div class="card grid-items3"></div>
+      <div class="card grid-items4"></div>
+      <div class="card grid-items5"></div>
+      <div class="card grid-items6"></div>
+      <div class="card grid-items7"></div>
+      <div class="card grid-items8"></div>
+    </main>
+    <footer>
+      <div class="footer">
+        footer
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
