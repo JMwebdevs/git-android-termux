@@ -55,7 +55,7 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
   font-weight: 500;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .btn:hover,
 .btn:active {
@@ -105,6 +105,10 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -140,7 +144,7 @@ img {
   font-size: 18px;
   line-height: 1.7;
 }
-
+    
 /* CHAIRS */
 .chair-box {
   padding: 24px;
